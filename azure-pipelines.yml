@@ -14,7 +14,8 @@ steps:
   displayName: 'Use .NET Core SDK 2.1.11'
   inputs:
     packageType: sdk
-    version: 2.1.11
+    version: 2.1.*
+    installationPath: $(Agent.ToolsDirectory)/dotnet
 
 - task: Npm@1
   displayName: 'Run npm install'
